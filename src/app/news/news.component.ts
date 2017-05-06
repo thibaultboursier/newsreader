@@ -2,8 +2,8 @@
  * Created by Thibault on 06/05/2017.
  */
 import {Component, OnInit} from '@angular/core';
-import {NewsService} from './news.service';
-import {News} from '../types/News';
+import {NewsService} from '../shared/services/news.service';
+import {News} from '../shared/types/News';
 
 @Component({
   selector: 'news',

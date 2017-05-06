@@ -1,13 +1,14 @@
+<button md-button color="primary" (click)="goBack()">Go back</button>
 <div class="news">
-  <md-card class="news__item" *ngFor="let item of news">
+  <md-card class="news__item">
     <md-card-header>
       <md-card-title>
         <h2>{{item.title}}</h2>
       </md-card-title>
       <md-card-subtitle>{{item.date}}</md-card-subtitle>
     </md-card-header>
-    <md-card-actions>
-      <button md-button color="primary" [routerLink]="['/news', item.id]">Read this article</button>
-    </md-card-actions>
+    <md-card-content>
+      {{item.content}}
+    </md-card-content>
   </md-card>
 </div>

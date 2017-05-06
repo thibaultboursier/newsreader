@@ -1,0 +1,15 @@
+<ul class="routes">
+  <li class="routes__route">
+    <a [routerLink]="['news']"
+       [routerLinkActiveOptions]="{exact:true}"
+       routerLinkActive="routes__route--active">
+      List
+    </a>
+  </li>
+  <li class="routes__route">
+    <a [routerLink]="['news/create']"
+       routerLinkActive="routes__route--active">
+      Add an item
+    </a>
+  </li>
+</ul>

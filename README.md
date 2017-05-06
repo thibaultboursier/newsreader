@@ -8,3 +8,4 @@ Install the npm packages described in the `package.json` and verify that it work
 npm install
 npm start
 ```
+Then, open your browser on http://localhost:3000

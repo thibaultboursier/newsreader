@@ -9,7 +9,22 @@ import {News} from '../types/News';
 
 @Injectable()
 export class NewsService {
-  getAll():Observable<News[]> {
+
+  /**
+   * Get all news.
+   * @returns {Observable}
+   */
+  getAll(){
     return Observable.from(news);
+  }
+
+  /**
+   * Get news by id.
+   * @param id
+   * @returns {Observable}
+   */
+  getById(id:number):Observable<News>{
+    return this.getAll()
+      .filter(item => item.id === id);
   }
 }

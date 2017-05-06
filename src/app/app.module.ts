@@ -1,7 +1,11 @@
 import {NgModule}      from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent}  from './app.component';
+import {NavigationComponent} from './navigation/navigation.component';
 import {NewsComponent} from './news/news.component';
+import {NewsDetailComponent} from './news-detail/news-detail.component';
+import {NewsCreateComponent} from './news-create/news-create.component';
+import {Router} from './app.router';
 import {MdListModule, MdCardModule, MdButtonModule} from '@angular/material';
 
 @NgModule({
@@ -9,11 +13,15 @@ import {MdListModule, MdCardModule, MdButtonModule} from '@angular/material';
     BrowserModule,
     MdListModule,
     MdCardModule,
-    MdButtonModule
+    MdButtonModule,
+    Router
   ],
   declarations: [
     AppComponent,
-    NewsComponent
+    NavigationComponent,
+    NewsComponent,
+    NewsDetailComponent,
+    NewsCreateComponent
   ],
   bootstrap: [AppComponent]
 })
