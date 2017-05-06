@@ -1,7 +1,9 @@
 /**
  * Created by Thibault on 06/05/2017.
  */
-export const news = [
+import {News} from '../types/News';
+
+export const news: News[] = [
   {
     id: 1,
     title: 'Art exhibition in Paris',
