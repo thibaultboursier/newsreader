@@ -1,1 +1,10 @@
-
+<form (ngSubmit)="onSubmit(f.value)" #f="ngForm">
+  <h2 *ngIf="item.title">Your item has title : <strong>{{item.title}}</strong></h2>
+  <div class="form-group">
+    <input type="text" [(ngModel)]="item.title" #title [readonly]="!isFormEnabled" class="form-control"
+           placeholder="title"
+           name="title" required>
+    <button type="submit" [disabled]="!isFormEnabled">add</button>
+    <div [hidden]="title.valid || title.pristine" class="alert alert-danger"></div>
+  </div>
+</form>

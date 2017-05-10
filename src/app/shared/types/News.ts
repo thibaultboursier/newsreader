@@ -5,4 +5,5 @@ export class News {
   id: number;
   title: string;
   date: string;
+  content: string;
 }
