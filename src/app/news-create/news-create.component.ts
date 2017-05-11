@@ -2,7 +2,7 @@
  * Created by Thibault on 06/05/2017.
  */
 import {Component} from '@angular/core';
-import {News} from '../shared/types/News'
+import {News} from '../shared/types/News';
 
 @Component({
   selector: 'news',
